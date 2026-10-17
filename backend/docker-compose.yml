@@ -1,0 +1,17 @@
+version: "3.9"
+
+services:
+  leadtracker_backend:
+    container_name: leadtracker_backend
+    build: .
+    restart: always
+    ports:
+      - "3000:3000"
+    env_file:
+      - .env
+    networks:
+      - leadtracker_network
+
+networks:
+  leadtracker_network:
+    external: true

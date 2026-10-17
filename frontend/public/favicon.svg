@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <defs>
+    <linearGradient id="lf-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4f46e5" />
+      <stop offset="100%" stop-color="#7c3aed" />
+    </linearGradient>
+    <linearGradient id="lf-check-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#10b981" />
+      <stop offset="100%" stop-color="#059669" />
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#000" flood-opacity="0.25" />
+    </filter>
+  </defs>
+
+  <!-- Background Squircle -->
+  <rect width="64" height="64" rx="16" fill="url(#lf-grad)" />
+  <rect x="1" y="1" width="62" height="62" rx="15" fill="none" stroke="rgba(255, 255, 255, 0.22)" stroke-width="1.5" />
+
+  <!-- Lead Avatar Icon -->
+  <g filter="url(#shadow)">
+    <!-- Shoulders / Torso -->
+    <path
+      d="M40 47v-2a7 7 0 0 0-7-7H21a7 7 0 0 0-7 7v2"
+      fill="none"
+      stroke="#ffffff"
+      stroke-width="3.5"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+    />
+    <!-- Head -->
+    <circle
+      cx="27"
+      cy="23"
+      r="7"
+      fill="none"
+      stroke="#ffffff"
+      stroke-width="3.5"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+    />
+  </g>
+
+  <!-- Qualified Status Checkmark Badge -->
+  <g filter="url(#shadow)">
+    <circle cx="44" cy="26" r="10.5" fill="#0f172a" />
+    <circle cx="44" cy="26" r="9" fill="url(#lf-check-grad)" />
+    <path
+      d="M40.8 26l2.4 2.4 5-5"
+      fill="none"
+      stroke="#ffffff"
+      stroke-width="2.3"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+    />
+  </g>
+</svg>
